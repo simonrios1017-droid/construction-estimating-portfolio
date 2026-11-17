@@ -1,0 +1,148 @@
+group,id,profile,location,length_m,count
+VP,VP-A-1,HSS 200x100x5.0,"x 1.48 to 8.22, on slope",6.826,
+VP,VP-A-2,HSS 200x100x5.0,"x 1.48 to 8.22, on slope",6.826,
+VP,VP-A-3,HSS 200x100x5.0,"x 1.48 to 8.30, on slope",6.901,
+VP,VP-A-4,HSS 200x100x5.0,"x 1.48 to 8.22, on slope",6.826,
+VP,VP-A-5,HSS 200x100x5.0,"x 1.48 to 8.30, on slope",6.901,
+VP,VP-A-6,HSS 200x100x5.0,"x 1.48 to 8.22, on slope",6.826,
+VP,VP-A-7,HSS 200x100x5.0,"x 1.48 to 8.30, on slope",6.901,
+VP,VP-A-8,HSS 200x100x5.0,"x 1.48 to 8.22, on slope",6.826,
+VP,VP-A-9,HSS 200x100x5.0,"x 1.92 to 8.22, on slope",6.375,
+VP,VP-B-1,HSS 200x100x5.0,"x 11.78 to 20.97, on slope",9.298,
+VP,VP-B-2,HSS 200x100x5.0,"x 11.70 to 20.97, on slope",9.374,
+VP,VP-B-3,HSS 200x100x5.0,"x 11.78 to 20.97, on slope",9.298,
+VP,VP-B-4,HSS 200x100x5.0,"x 17.62 to 22.06, on slope",4.485,
+VP,VP-B-5,HSS 200x100x5.0,"x 11.70 to 22.06, on slope",10.476,
+VP,VP-B-6,HSS 200x100x5.0,"x 11.78 to 22.06, on slope",10.4,
+VP,VP-B-7,HSS 200x100x5.0,"x 11.78 to 22.06, on slope",10.4,
+VB,VB-V1-N,HSS 200x100x5.0,on shaft / tank walls,3.438,
+VB,VB-V2-S,HSS 200x100x5.0,on shaft / tank walls,3.438,
+VB,VB-V2-N,HSS 200x100x5.0,on shaft / tank walls,3.438,
+VB,VB-V3-S,HSS 200x100x5.0,on shaft / tank walls,3.438,
+VB,VB-V3-N,HSS 200x100x5.0,on shaft / tank walls,3.438,
+VB,VB-V4-S,HSS 200x100x5.0,on shaft / tank walls,3.438,
+VB,VB-TQ-S,HSS 200x100x5.0,on shaft / tank walls,5.915,
+VB,VB-TQ-N,HSS 200x100x5.0,on shaft / tank walls,5.915,
+CM,CM-A-1-1,HSS 100x100x4.0,post height,0.404,
+CM,CM-A-1-2,HSS 100x100x4.0,post height,1.222,
+CM,CM-A-1-3,HSS 100x100x4.0,post height,1.337,
+CM,CM-A-2-4,HSS 100x100x4.0,post height,0.404,
+CM,CM-A-2-5,HSS 100x100x4.0,post height,1.339,
+CM,CM-A-3-6,HSS 100x100x4.0,post height,0.407,
+CM,CM-A-3-7,HSS 100x100x4.0,post height,1.232,
+CM,CM-A-3-8,HSS 100x100x4.0,post height,1.342,
+CM,CM-A-4-9,HSS 100x100x4.0,post height,0.41,
+CM,CM-A-4-10,HSS 100x100x4.0,post height,1.342,
+CM,CM-A-5-11,HSS 100x100x4.0,post height,0.41,
+CM,CM-A-5-12,HSS 100x100x4.0,post height,1.237,
+CM,CM-A-6-13,HSS 100x100x4.0,post height,0.41,
+CM,CM-A-6-14,HSS 100x100x4.0,post height,1.35,
+CM,CM-A-7-15,HSS 100x100x4.0,post height,0.419,
+CM,CM-A-7-16,HSS 100x100x4.0,post height,1.237,
+CM,CM-A-8-17,HSS 100x100x4.0,post height,0.864,
+CM,CM-A-8-18,HSS 100x100x4.0,post height,1.36,
+CM,CM-A-9-19,HSS 100x100x4.0,post height,0.431,
+CM,CM-A-9-20,HSS 100x100x4.0,post height,1.363,
+CM,CM-B-1-21,HSS 100x100x4.0,post height,1.158,
+CM,CM-B-1-22,HSS 100x100x4.0,post height,1.797,
+CM,CM-B-1-23,HSS 100x100x4.0,post height,1.17,
+CM,CM-B-2-24,HSS 100x100x4.0,post height,1.16,
+CM,CM-B-2-25,HSS 100x100x4.0,post height,1.799,
+CM,CM-B-2-26,HSS 100x100x4.0,post height,1.169,
+CM,CM-B-3-27,HSS 100x100x4.0,post height,1.163,
+CM,CM-B-3-28,HSS 100x100x4.0,post height,1.796,
+CM,CM-B-3-29,HSS 100x100x4.0,post height,1.158,
+CM,CM-B-4-30,HSS 100x100x4.0,post height,1.593,
+CM,CM-B-4-31,HSS 100x100x4.0,post height,0.995,
+CM,CM-B-5-32,HSS 100x100x4.0,post height,1.15,
+CM,CM-B-5-33,HSS 100x100x4.0,post height,1.793,
+CM,CM-B-5-34,HSS 100x100x4.0,post height,1.005,
+CM,CM-B-6-35,HSS 100x100x4.0,post height,1.162,
+CM,CM-B-6-36,HSS 100x100x4.0,post height,1.802,
+CM,CM-B-6-37,HSS 100x100x4.0,post height,1.005,
+CM,CM-B-7-38,HSS 100x100x4.0,post height,1.163,
+CM,CM-B-7-39,HSS 100x100x4.0,post height,1.799,
+CM,CM-B-7-40,HSS 100x100x4.0,post height,1.001,
+C1,C1-1,C 160x60x2.0,line x 1.57,32.079,8
+C1,C1-2,C 160x60x2.0,line x 3.02,32.116,9
+C1,C1-3,C 160x60x2.0,line x 4.47,32.152,9
+C1,C1-4,C 160x60x2.0,line x 5.92,32.189,9
+C1,C1-5,C 160x60x2.0,line x 7.37,32.225,9
+C1,C1-6,C 160x60x2.0,line x 8.15,32.245,9
+C1,C1-7,C 160x60x2.0,line x 8.81,3.97,2
+C1,C1-8,C 160x60x2.0,line x 8.81,4.31,2
+C1,C1-9,C 160x60x2.0,line x 8.81,3.93,2
+C1,C1-10,C 160x60x2.0,line x 10.26,3.97,2
+C1,C1-11,C 160x60x2.0,line x 10.26,4.31,2
+C1,C1-12,C 160x60x2.0,line x 10.26,3.93,2
+C2,C2-13,C 203x67x2.0,line x 11.85,12.765,4
+C2,C2-14,C 203x67x2.0,line x 11.85,15.063,4
+C2,C2-15,C 203x67x2.0,line x 13.15,12.765,4
+C2,C2-16,C 203x67x2.0,line x 13.15,15.096,4
+C2,C2-17,C 203x67x2.0,line x 14.60,12.765,4
+C2,C2-18,C 203x67x2.0,line x 14.60,15.133,4
+C2,C2-19,C 203x67x2.0,line x 16.05,12.765,4
+C2,C2-20,C 203x67x2.0,line x 16.05,15.169,4
+C2,C2-21,C 203x67x2.0,line x 16.25,12.765,4
+C2,C2-22,C 203x67x2.0,line x 16.25,15.174,4
+C2,C2-23,C 203x67x2.0,line x 17.70,32.486,7
+C2,C2-24,C 203x67x2.0,line x 19.11,32.521,7
+C2,C2-25,C 203x67x2.0,line x 20.53,32.557,7
+C2,C2-26,C 203x67x2.0,line x 21.96,18.518,4
+XB,XB-A-1,"rod 5/8"" + turnbuckle",bay x 1.87-7.32,13.56,
+XB,XB-A-2,"rod 5/8"" + turnbuckle",bay x 7.32-8.09,8.05,
+XB,XB-A-3,"rod 5/8"" + turnbuckle",bay x 4.93-8.24,10.68,
+XB,XB-B-4,"rod 5/8"" + turnbuckle",bay x 11.85-16.11,13.47,
+XB,XB-B-5,"rod 5/8"" + turnbuckle",bay x 16.11-20.37,13.47,
+XB,XB-B-6,"rod 5/8"" + turnbuckle",bay x 11.88-16.16,14.57,
+XB,XB-B-7,"rod 5/8"" + turnbuckle",bay x 16.16-21.47,15.89,
+SR,SR-A-1,"rod 3/8"" at L/2",y 2.05,6.83,
+SR,SR-A-2,"rod 3/8"" at L/2",y 6.04,6.9,
+SR,SR-A-3,"rod 3/8"" at L/2",y 10.04,6.83,
+SR,SR-A-4,"rod 3/8"" at L/2",y 14.01,6.9,
+SR,SR-A-5,"rod 3/8"" at L/2",y 17.98,6.83,
+SR,SR-A-6,"rod 3/8"" at L/2",y 21.94,6.9,
+SR,SR-A-7,"rod 3/8"" at L/2",y 25.90,6.83,
+SR,SR-A-8,"rod 3/8"" at L/2",y 29.96,6.83,
+SR,SR-B-9,"rod 3/8"" at L/2",y 2.66,9.3,
+SR,SR-B-10,"rod 3/8"" at L/2",y 7.89,9.37,
+SR,SR-B-11,"rod 3/8"" at L/2",y 13.22,3.38,
+SR,SR-B-12,"rod 3/8"" at L/2",y 18.52,10.4,
+SR,SR-B-13,"rod 3/8"" at L/2",y 23.80,10.48,
+SR,SR-B-14,"rod 3/8"" at L/2",y 29.40,10.4,
+SR,SR-S-15,"rod 3/8"" at L/2",y 7.17,3.44,
+SR,SR-S-16,"rod 3/8"" at L/2",y 14.95,3.44,
+SR,SR-S-17,"rod 3/8"" at L/2",y 23.00,3.44,
+GU,GU-A,"gutter ga. 22, 0.15x0.15",eave,32.04,4
+GU,GU-B,"gutter ga. 22, 0.15x0.15",eave,32.5,3
+GU,GU-S1,"gutter ga. 22, 0.15x0.15",shaft edge,5.21,1
+GU,GU-S2,"gutter ga. 22, 0.15x0.15",shaft edge,3.67,1
+GU,GU-S3,"gutter ga. 22, 0.15x0.15",shaft edge,4.03,1
+GU,GU-S4,"gutter ga. 22, 0.15x0.15",shaft edge,7.3,1
+DS4,DS-A-1,"PVC 4""",z 110.26 to 91.51,18.75,
+DS4,DS-A-2,"PVC 4""",z 110.26 to 91.51,18.75,
+DS4,DS-A-3,"PVC 4""",z 110.26 to 91.51,18.75,
+DS4,DS-A-4,"PVC 4""",z 110.26 to 91.51,18.75,
+DS4,DS-B-1,"PVC 4""",z 111.66 to 99.26,12.4,
+DS4,DS-B-2,"PVC 4""",z 111.66 to 99.26,12.4,
+DS4,DS-B-3,"PVC 4""",z 111.66 to 99.26,12.4,
+DS3,DS-S1,"PVC 3""",z 111.81 to 91.51,20.3,
+DS3,DS-S2,"PVC 3""",z 111.82 to 91.51,20.31,
+DS3,DS-S3,"PVC 3""",z 111.82 to 91.51,20.31,
+DS3,DS-S4,"PVC 3""",z 111.82 to 91.51,20.31,
+DR,DR-S1-1,aluminium drip,gable,3.36,
+DR,DR-S1-2,aluminium drip,parapet,5.13,
+DR,DR-S1-3,aluminium drip,parapet,3.36,
+DR,DR-S1-4,aluminium drip,parapet,5.13,
+DR,DR-S2-5,aluminium drip,parapet,3.36,
+DR,DR-S2-6,aluminium drip,parapet,3.52,
+DR,DR-S2-7,aluminium drip,parapet,3.36,
+DR,DR-S2-8,aluminium drip,parapet,3.52,
+DR,DR-S3-9,aluminium drip,parapet,3.34,
+DR,DR-S3-10,aluminium drip,parapet,3.88,
+DR,DR-S3-11,aluminium drip,parapet,3.34,
+DR,DR-S3-12,aluminium drip,parapet,3.88,
+DR,DR-S4-13,aluminium drip,parapet,3.34,
+DR,DR-S4-14,aluminium drip,parapet,7.278,
+DR,DR-S4-15,aluminium drip,gable,3.348,
+DR,DR-S4-16,aluminium drip,parapet,7.041,

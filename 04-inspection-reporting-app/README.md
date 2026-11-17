@@ -1,53 +1,23 @@
-# 04 · Post-Earthquake Inspection & Repair-Estimate System (case study)
+# 04 – Post-earthquake inspections and repair budgets
 
-**Context:** after the August 2026 earthquake in Cali, my firm inspected residential complexes apartment by apartment. Each building produced hundreds of findings (cracks, detachments, deformations, leaks). Each finding had to become:
+After the August 2026 earthquake in Cali we inspected residential complexes apartment by apartment. One building can give several hundred findings (cracks, spalling, detached finishes, leaks), and each one had to end up as:
 
-1. a documented record with a photo and location,
+1. a record with photo and location,
 2. a priced repair line,
-3. a client report that the insurer could audit.
+3. part of a report the insurer can check.
 
-To handle this with several inspectors working at the same time, I specified a web application and ran it in production. The source code stays private because it is in commercial use. This page describes what it does and how it is built.
+For that we use a small web application with several inspectors capturing at the same time. I defined what it captures and the rules; the code is private because we use it with clients.
 
-## What it does
+## From the field to the budget
 
-- **Field capture (phone):** the inspector walks a generated list of locations (tower → floor → unit → room, plus common areas). For each finding the inspector records:
-  - the element (column, beam, slab, wall, finish…), from a catalog that only accepts valid element–damage pairs;
-  - the damage type and severity;
-  - the magnitude in m, m² or units;
-  - a photo, compressed on the phone to 800 KB or less.
-- **From finding to estimate:** each finding maps to repair activities from a catalog, each with its own unit of measure. Quantities roll up into a preliminary repair budget per unit, per tower and per project. Every budget line keeps the finding and location it came from.
-- **Report engine:** client reports on Letter-size pages with a summary by structure, severity and type of reform, finding cards, the budget, and habitability and priority flags. A report is versioned and **frozen** when issued, so later edits do not change what the client received.
-- **Administration:** progress per project, inspector accounts, release or skip of locations, and CSV export of the full dataset.
+- The inspector follows a list of locations: tower → floor → apartment → room, plus common areas.
+- Each finding records element (column, beam, slab, wall, finish…), damage type, severity, size in m, m² or units, and a photo.
+- Only element–damage combinations that make sense are accepted (a catalog defines them).
+- Each finding is linked to repair activities, each with its own unit. Quantities add up per apartment, per tower and per project.
+- Every budget line keeps the finding and location it came from, so the client or the insurer can go from the price back to the photo.
+- Earthquake damage is kept apart from older deterioration.
+- A report is frozen when it is issued; later corrections go into a new version.
 
-## How it is built
+## Technical summary
 
-```
-Browser (Vite, ES modules)
-   │  supabase-js
-   ├── Auth ......... email + password
-   ├── PostgREST .... reads under Row Level Security
-   ├── RPC .......... all capture writes (SECURITY DEFINER functions)
-   └── Storage ...... private photo bucket
-            │
-   PostgreSQL 16 · 80+ tables · 170+ functions · 130+ RLS policies · 111 migrations
-```
-
-**Key design rule:** the client cannot write capture data directly to any table. Every write goes through a database function that validates the business rules and writes an audit row. A manipulated browser cannot save an invalid finding, because the database rejects it, not the screen.
-
-## Quality checks
-
-There are more than 60 automated test files. Each suite rebuilds the database from zero before it starts. They cover:
-
-- row-level security;
-- an end-to-end inspector walk-through in Chromium;
-- 4 inspectors capturing on the same project at the same time;
-- the report engine, checked page by page against a Letter-size layout;
-- the CSV export, checked for completeness and permissions.
-
-## What this shows for estimating work
-
-- Turning a messy field survey into **traceable quantities**: every budget line points back to a photo and a location.
-- Designing **units of measure and repair catalogs** that make findings priceable.
-- Separating **earthquake damage from pre-existing deterioration**, which is what insurers ask for.
-
-Built with AI-assisted development (Claude Code). I wrote the specification, the domain rules, the catalogs and the acceptance tests, and I reviewed the results.
+Web app (Vite) on PostgreSQL / Supabase. Field data can only be written through database functions that check the rules and keep an audit trail; the browser cannot write directly to the tables. Automated tests rebuild the database from scratch and cover permissions, several inspectors working at once, the printed report and the data export.

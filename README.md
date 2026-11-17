@@ -1,31 +1,31 @@
-# Construction Estimating Portfolio · Juan Simón Ríos Suárez
+# Construction estimating – work samples
 
-Civil engineer and construction cost estimator based in Cali, Colombia, with 6+ years in quantity take-off, budgets and bid packages for residential and commercial work. I work in Excel, AutoCAD, Revit and Bluebeam, and I write Python when a repetitive task is worth automating.
+Juan Simón Ríos Suárez, civil engineer, Cali, Colombia.
+Budgets, quantity take-off and cost control for residential and infrastructure work since 2019. I work in Excel, OPUS, AutoCAD, Revit and Bluebeam.
 
-This repository shows how I work: how I measure, how I document a quantity so someone else can check it, and the tools I build around estimating. Client names, addresses, drawings and real prices are withheld; sample data is fictional unless the source is public.
+Client names, drawings and real prices are not published. Piece 01 uses public bid documents; the rest is anonymized.
 
-| # | Piece | What it shows |
+| | Piece | Content |
 |---|---|---|
-| [01](01-concrete-takeoff) | **Concrete & foundation rebar take-off** from public US bid documents | A formula-driven Excel take-off, traceable to the sheet, with RFIs: 80 CY of concrete and 5,375 LB of rebar |
-| [02](02-steel-roof-quantities) | **Steel roof replacement quantity memo** for a 1970s building | Steel members in m, plates and clips by piece, sandwich panel, flashings and stormwater; a preliminary sizing check before quantities were frozen |
-| [03](03-quote-generator) | **Quote generator**, from a JSON job file to a priced DOCX | Totals, payment milestones and schedule computed once and validated, with tests |
-| [04](04-inspection-reporting-app) | **Post-earthquake inspection & repair-estimate system** (case study) | Field findings turned into priced, traceable repair budgets and frozen client reports |
-| [05](05-scanned-plan-reconstruction) | **Rebuilding a 1977 building from paper scans** | Bay-by-bay rectification to DWG, audit loop, Revit model and areas, with a tested tool |
+| 01 | [Foundation take-off, public bid set](01-concrete-takeoff) | Quantity memo + rebar schedule + unit-rate sheet (concrete, steel, formwork) |
+| 02 | [Steel roof replacement, existing building](02-steel-roof-quantities) | Quantity memo: members in m, plates and clips by piece, panel in m² |
+| 03 | [Quote generator](03-quote-generator) | Job file in, quote document out; totals and payment milestones checked |
+| 04 | [Post-earthquake inspection and repair budgets](04-inspection-reporting-app) | How findings in the field become a priced repair budget |
+| 05 | [Drawings rebuilt from 1977 scans](05-scanned-plan-reconstruction) | Scan to DWG to Revit, and the floor areas |
 
-## How I write a quantity memo
+## How the memos are organized
 
-Every memo here follows the same order, so a reviewer always knows where to look:
+Each budget line is backed by two sheets:
 
-1. **Summary** first: the quantities that go into the estimate.
-2. **Input data**: each dimension with the sheet it came from.
-3. **Calculation**: formulas over the input data, never typed results.
-4. **Open items**: conflicts between drawings, written as RFIs.
-5. **Notes**: exclusions and what belongs to another package, to avoid double counting.
+- **Quantity memo**: the quantity of the line, measured from the drawings. Top to bottom: summary (with a "from" column pointing to the row it comes from), input data in yellow with the sheet and detail it was read from, measurement and calculation with formulas, open items that are **not added**, and short notes. Drawing clips go in a separate SUPPORT sheet.
+- **Unit-rate sheet**: what one unit of that line consumes (concrete, steel by bar, formwork as it is actually built, release agent…), using the dimensions of the same element. This is what goes into the cost item, so nothing is added by hand later.
+
+If the drawings don't define something, it stays as an open item until there is an answer. It is not filled in with a guess.
+
+Quantities in the memo are net. Waste goes in the unit-rate sheet.
 
 ## Contact
 
-- LinkedIn: <https://www.linkedin.com/in/simon-rios-su%C3%A1rez-a739a0ba>
+LinkedIn: <https://www.linkedin.com/in/simon-rios-su%C3%A1rez-a739a0ba>
 
----
-
-*The software pieces were built with AI-assisted development (Claude Code). I wrote the specifications and domain rules, and I reviewed and tested the results.*
+The Python scripts were written with an AI coding assistant; the rules, criteria and checks are mine.

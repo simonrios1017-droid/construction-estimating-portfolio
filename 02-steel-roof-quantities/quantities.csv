@@ -1,32 +1,32 @@
 item,description,unit,net_qty
 A,DEMOLITION AND CLOSURES,,
-A.1,"Demolition of existing masonry gable walls (interior, ridge, end walls)",m2,437.71
-A.2,Water-resistant board on exterior gable faces (end walls 66.00 + facade closures 68.97),m2,134.97
+A.1,Demolition of masonry gable walls,m²,437.71
+A.2,Water-resistant board on exterior gable faces,m²,134.97
 B,STRUCTURAL STEEL,,
-B.1,"Main beam VP, rectangular HSS 200x100x5.0 (16 pcs)",m,124.94
-B.2,"Edge beam VB, rectangular HSS 200x100x5.0 (8 pcs)",m,32.46
-B.3,"Post CM, square HSS 100x100x4.0 (40 pcs)",m,45.36
-B.4,"Purlin C1, cold-formed C 160x60x2.0 (tower A and strips between shafts)",m,217.43
-B.5,"Purlin C2, cold-formed C 203x67x2.0 (tower B)",m,255.54
-B.6,"X-bracing, 5/8"" smooth rod with turnbuckle (14 pcs)",m,89.69
-B.7,"Purlin sag rods at L/2, 3/8"" smooth rod with nut and washer",m,118.5
-B.8,"Base plate 250x250x9.5 mm with 4 anchors 1/2"" in epoxy",ea,40
-B.9,"Edge-beam plate 200x150x9.5 mm with 2 anchors 1/2"" in epoxy",ea,16
-B.10,"Purlin-to-beam clip, angle 2""x2""x3/16"" L 0.15 with 2 bolts 3/8""",ea,130
-C,"ROOFING, 1 1/2"" SANDWICH PANEL",,
-C.1,"Insulated sandwich panel 1 1/2"" (sloped area)",m2,555.76
-C.2,Self-drilling screw with EPDM washer,ea,1420
+B.1,"Main beam VP, HSS 200x100x5.0",m,124.94
+B.2,"Edge beam VB, HSS 200x100x5.0",m,32.46
+B.3,"Post CM, HSS 100x100x4.0",m,45.36
+B.4,"Purlin C1, C 160x60x2.0 (tower A)",m,217.43
+B.5,"Purlin C2, C 203x67x2.0 (tower B)",m,255.54
+B.6,"X-bracing, 5/8"" rod with turnbuckle",m,89.69
+B.7,"Sag rods at L/2, 3/8"" rod",m,118.5
+B.8,"Base plate 250x250x9.5 + 4 epoxy anchors 1/2""",ea,40
+B.9,"Edge beam plate 200x150x9.5 + 2 epoxy anchors 1/2""",ea,16
+B.10,"Purlin clip, angle 2""x2""x3/16"" x 0.15",ea,130
+C,ROOFING,,
+C.1,"Sandwich panel 1 1/2""",m²,555.76
+C.2,Self-drilling screw with EPDM washer,ea,1419
 C.3,Ridge cap,m,27.86
-C.4,Eave drip edge (both facades),m,64.54
+C.4,"Eave drip, both facades",m,64.54
 C.5,Gable trim,m,33.34
-C.6,Wall flashing (shafts and roof hatch),m,81.75
-C.7,Aluminium drip at top of interior shaft faces,m,66.19
-D,STORMWATER,,
-D.1,"Galvanized gutter ga. 22, 0.15 x 0.15 (eaves and shaft edges)",m,84.75
-D.2,Gutter bracket @ 0.60,ea,142
+C.6,"Wall flashing, shafts and hatch",m,81.75
+C.7,Aluminium drip on shaft parapets,m,66.19
+D,RAINWATER,,
+D.1,"Gutter ga. 22, 0.15 x 0.15",m,84.75
+D.2,Gutter bracket @ 0.60,ea,145
 D.3,Gutter end cap,ea,12
-D.4,"PVC downspout 4"" (7 pcs, street facades)",m,112.2
-D.5,"PVC downspout 3"" (4 pcs, inside shafts)",m,81.23
+D.4,"PVC downspout 4""",m,112.2
+D.5,"PVC downspout 3"" (inside shafts)",m,81.23
 D.6,Gutter outlet with strainer,ea,11
-D.7,45 deg elbow (gooseneck),ea,22
+D.7,45° elbow (gooseneck),ea,22
 D.8,Downspout strap @ 1.50,ea,135

@@ -1,42 +1,38 @@
-# 01 · Concrete & Foundation Rebar Take-off (public bid documents)
+# 01 – Foundation take-off, public bid set
 
-**Project:** Liberty City Park Restroom & Concession Building — City of Liberty, TX (public bid 2026-01).
-**Scope:** slab on grade, grade beams, continuous footings, thickened slabs (F3, F9, F10) and foundation reinforcing.
-**Sheets used:** S2 (foundation plan) and S3 (foundation sections). Quantities only, no pricing.
+Restroom and concession building for a city park in Texas. Structural sheets S1 (general notes), S2 (foundation plan) and S3 (sections F1–F10). Quantities only, no prices.
 
-## 1. Summary
+| Item | Net qty | From |
+|---|---:|---|
+| Concrete 3500 psi, slab on grade incl. F3 and F9 | 30.52 CY | B-01 to B-03 |
+| Concrete, grade beams | 14.76 CY | B-04 |
+| Concrete 3000 psi, continuous footing | 22.27 CY | B-05 |
+| Reinforcing steel Gr 60 | 3,873 lb | rebar schedule |
+| Formwork, grade beams | 863 SF | B-06 |
+| Slab bar chairs | 144 ea | B-07 |
 
-| CSI | Item | Net qty | Waste | Order qty |
-|---|---|---:|---:|---:|
-| 03 30 00 | Cast-in-place concrete, total | 80.0 CY | 5 % | 84 CY |
-| | of which slab on grade 5" | 27.4 CY | 5 % | 29 CY |
-| | of which foundations (beams, footings, F3/F9/F10) | 52.5 CY | 5 % | 56 CY |
-| 03 20 00 | Reinforcing steel Gr. 60, foundations and slab | 5,375 LB | 5 % | 5,644 LB |
-| 03 30 00 | Slab on grade area (vapor barrier, finish) | 1,779 SF | 10 % | 1,957 SF |
+Concrete is split by strength because S1 gives 3000 psi for footings and 3500 psi for the slab. S1 doesn't list a strength for the grade beams, so that line stays open.
 
-## 2. How the workbook is built
+## Workbook
 
-`Takeoff_Concrete_Foundations.xlsx` follows the same order on every memo I prepare:
+`Takeoff_Concrete_Foundations.xlsx`
 
-1. **Summary on top**: what the reader needs first, with net and order quantities.
-2. **Input data (yellow cells)**: every dimension read from the drawings, with the sheet and how it was measured.
-3. **Calculation**: every quantity is an Excel formula over the input block, so changing one dimension updates the whole estimate.
-4. **Open items (RFIs)**: conflicts between sheets, written as the question I would send to the architect or engineer.
-5. **Notes / exclusions**: what is deliberately left out, to avoid double counting with other packages.
+- **TAKEOFF**: summary, data read from the drawings (yellow, with sheet and dimension), measurement with formulas, open items not added, notes.
+- **REBAR SCHEDULE**: bar by bar. Run + hooks drawn + laps. A 40 db lap (S1) only where the run passes the 20 ft stock length. Stirrups developed from the S1 covers. It includes the 1-#6 × 4'-0" corner bars from the S1 notes.
+- **PARAMETRIC**: what one LF of F1 grade beam + footing uses. It covers concrete, steel by bar and formwork the way it is built: 2 runners per face, braces every 1'-8", one 4x4 per face, ÷ 2 uses × 1.10, release agent at 20 m²/gal. Waste goes here, not in the memo.
+- **SUPPORT**: the S1, S2 and S3 clips used.
 
-The `SUPPORT` sheet keeps the drawing clips used for each measurement, so a reviewer can trace any number back to the plan.
+## Open items (not added)
 
-## 3. Open items found
-
-- **RFI-1:** S2 (Aug 2024) shows a 58'-0" slab with a 12'-6" porch; A101 (rev. Dec 2025) shows 55'-0" overall. Taken off per S2 (structural governs); porch extent to be confirmed.
-- **RFI-2:** F10 says "widen as required at column" with no footing size; extra footing at columns not included.
-- **RFI-3:** the porch joint band has no section mark; taken as F3.
-
-## 4. Reproduce
+- Grade beam concrete strength not listed in S1.
+- Footing-to-beam dowels 2-#5 @ 24": no length shown.
+- F3 bars "into grade beams at ends": no embedment shown.
+- F10 "widen as required at column": footing size not defined.
+- Porch joint band on S2 has no section mark.
+- Slab construction joints: locations are left to the contractor.
+- Porch length 12'-6" on S2 vs 9'-6" on A101. S2 used.
 
 ```bash
 pip install openpyxl
 python build_takeoff.py
 ```
-
-The script regenerates the workbook from scratch. Open it in Excel and the formulas compute the totals above.

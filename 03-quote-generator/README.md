@@ -1,37 +1,25 @@
-# 03 · Quote Generator (JSON → priced DOCX)
+# 03 – Quote generator
 
-**Context:** after the August 2026 earthquake in Cali, my firm issued many inspection and repair quotes to residential complexes over the following months. Each one had the same structure: scope, line items, payment milestones and schedule. Only the quantities and the client changed.
+After the August 2026 earthquake in Cali we sent a lot of inspection quotes to residential complexes. They were all the same document: scope, items, payment schedule and duration. Only the client and the quantities changed, so each quote is generated from a short job file instead of editing Word by hand.
 
-Instead of editing Word files by hand, every quote was generated from a short job file, so that:
+What the script checks:
 
-- **the total is computed once.** The quote table and the payment schedule both come from the same numbers.
-- **payment milestones always add up to the total.** Rounding goes to the last milestone, and shares that do not add up to 100 % are rejected.
-- **the schedule comes from productivity.** Field days are the units divided by the units per day, rounded up, plus the days for the report.
-- **a new quote takes minutes.** You copy the last job file, change the quantities and regenerate.
+- The total is calculated once; the price table and the payment schedule use the same figure.
+- Payment shares must add up to 100 %. Rounding goes to the last payment.
+- Field days = units ÷ units per day, rounded up, plus the days for the report.
 
-This is a cleaned-up, generic version of that tool. The client, prices and quantities in `example_job.json` are fictional.
+Client, prices and quantities in `example_job.json` are made up.
 
-## Files
-
-| File | What it does |
+| File | |
 |---|---|
-| `generate_quote.py` | `compute_quote()` validates and prices the job; `write_docx()` writes the client document |
-| `example_job.json` | Sample job: 30 units plus extras, 50/30/20 payments, no VAT |
-| `test_generate_quote.py` | Checks the totals, the milestone rounding, VAT, the rejection of bad shares, and that the DOCX carries the same total |
-
-## Run
+| `generate_quote.py` | prices the job and writes the DOCX |
+| `example_job.json` | sample job: 30 apartments + extras, payments 50/30/20, no VAT |
+| `test_generate_quote.py` | checks totals, rounding of payments, VAT and that the DOCX shows the same total |
 
 ```bash
 pip install python-docx
-python test_generate_quote.py      # prints "ok"
-python generate_quote.py           # writes INS-02_000-DEMO.docx
+python test_generate_quote.py
+python generate_quote.py
 ```
 
-## How the production version differs
-
-- It writes onto the firm's letterhead template, which already carries the signature and the legal clauses.
-- The full scope text is about 15 sections: methodology, deliverables, report card fields, severity criteria, exclusions and acceptance.
-- Unit prices come from a pricing model in Excel that works backwards from cost:
-  - It adds the subcontracted engineer's fee plus their VAT, own field costs and a target profit.
-  - It grosses that up for the withholding tax the client deducts, and divides by the number of units.
-  - A verification block checks that the target profit comes back exactly, and a sensitivity table shows the price for different subcontractor fees.
+The version we use writes on the company letterhead and has the full scope text (methodology, deliverables, severity criteria, exclusions, acceptance). Unit prices come from an Excel price model that starts from cost: engineer's fee + VAT, field costs and target margin, grossed up for the withholding tax the client deducts. It has a check row so the margin comes back exactly, and a table of prices for different engineer fees.
