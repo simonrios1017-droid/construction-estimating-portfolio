@@ -1,0 +1,59 @@
+{
+  "code": "INS-02_000-DEMO",
+  "service": "Inspección integral post-sismo de zonas comunes y revisión estructural interna",
+  "client": "Conjunto Residencial Ejemplo (ficticio)",
+  "date": "17 de noviembre de 2026",
+  "location": "Cali, Valle del Cauca",
+  "scope": "Inspección visual de la estructura, fachadas, juntas y cubiertas de dos torres de cinco pisos, revisión de los elementos estructurales dentro de los apartamentos, fichas por hallazgo y presupuesto preliminar de reparación.",
+  "vat_rate": 0,
+  "items": [
+    {
+      "description": "Inspección por apartamento",
+      "unit": "und",
+      "qty": 30,
+      "unit_price": 150000
+    },
+    {
+      "description": "Punto de anclaje certificado para trabajo en alturas",
+      "unit": "und",
+      "qty": 2,
+      "unit_price": 450000
+    },
+    {
+      "description": "Descolgado por fachada para chequeo de juntas",
+      "unit": "und",
+      "qty": 1,
+      "unit_price": 550000
+    },
+    {
+      "description": "Jornada de inspección de cubierta",
+      "unit": "und",
+      "qty": 2,
+      "unit_price": 550000
+    }
+  ],
+  "payments": [
+    {
+      "description": "Anticipo para inicio y programación de visitas",
+      "share": 0.5
+    },
+    {
+      "description": "Contra fin de la inspección en campo",
+      "share": 0.3
+    },
+    {
+      "description": "Contra entrega del informe y del presupuesto",
+      "share": 0.2
+    }
+  ],
+  "schedule": {
+    "units": 30,
+    "unit_name": "apartamentos",
+    "units_per_day": 15,
+    "report_days": 3
+  },
+  "exclusions": [
+    "Ensayos, calas, regatas o exploración destructiva.",
+    "Diseños o estudios de vulnerabilidad: se cotizan aparte si los hallazgos lo justifican."
+  ]
+}
